@@ -61,3 +61,19 @@ const store = new Stor();
 // Método destroy
 store.destroy('name'); // De esta manera nos eliminara un dato en especifico, que contenga esa key
 ```
+
+## Método clean()
+
+El método clean, nos permite vaciar todo el objeto Storage y es tan simple como solo llamarlo de la siguiente manera.
+
+ejemplo:
+
+```javascript
+// Para utilizar el método clean podemos hacer uso de el así
+
+// Instancia del objeto Stor
+const store = new Stor();
+
+// Método destroy
+store.clean(); // Con esto ya tendremos vaciado nuestro objeto Storage. 
+```

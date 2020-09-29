@@ -77,3 +77,7 @@ const store = new Stor();
 // Método destroy
 store.clean(); // Con esto ya tendremos vaciado nuestro objeto Storage. 
 ```
+
+## Lincencia
+
+El codigo esta disponible bajo la lincencia MIT License.

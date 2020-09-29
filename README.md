@@ -1,6 +1,6 @@
 # Stor js
 
-### Stor.js, es una libreria que te permite interactuar con la API de localStorage.
+## Stor.js, es una libreria que te permite interactuar con la API de localStorage.
 
 ## API
 
@@ -19,7 +19,5 @@ El método set nos permite guardar datos dentro del objeto Storage y este métod
 ejemplo:
 
 `
-const store = new Store();
-
 store.set('nombre', 'storjs');
 `

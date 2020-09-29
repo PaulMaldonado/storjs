@@ -2,6 +2,14 @@
 
 ## Stor.js, es una libreria que te permite interactuar con la API de localStorage.
 
+## Instalación
+
+Para hacer uso de la libreria, usted puede usar el siguiente CDN
+
+## CDN
+
+https://cdn.jsdelivr.net/gh/PaulMaldonado/Storjs/stor.min.js
+
 ## API
 
 Antes de comenzar a trabajar con Storjs, usted necesita hacer una nueva instancia del objeto Stor de la siguiente manera.

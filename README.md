@@ -41,6 +41,23 @@ ejemplo:
 // Instancia del objeto Stor
 const store = new Stor();
 
-// Método set
+// Método get
 store.get('name'); // De esta manera si tenemos datos almacenados los extraera
+```
+
+## Método destroy()
+
+El método destroy, nos permite eliminar un dato pasando un argumento al método, y ese argumento tiene que ser una key.
+
+ejemplo:
+
+
+```javascript
+// Para utilizar el método destroy podemos hacer uso de el así
+
+// Instancia del objeto Stor
+const store = new Stor();
+
+// Método destroy
+store.destroy('name'); // De esta manera nos eliminara un dato en especifico, que contenga esa key
 ```

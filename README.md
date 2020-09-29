@@ -78,6 +78,6 @@ const store = new Stor();
 store.clean(); // Con esto ya tendremos vaciado nuestro objeto Storage. 
 ```
 
-## Lincencia
+## Licencia
 
-El codigo esta disponible bajo la lincencia MIT License.
+El codigo esta disponible bajo la licencia MIT License.

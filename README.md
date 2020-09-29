@@ -8,16 +8,39 @@ Antes de comenzar a trabajar con Storjs, usted necesita hacer una nueva instanci
 
 ejemplo:
 
-`
+```javascript
+// Primero hacemos una instancia del objeto Stor
 const store = new Stor();
-`
+```
 
 ## Método set()
 
-El método set nos permite guardar datos dentro del objeto Storage y este método recibe dos argumentos, el primero es una llave y el segundo es un valor y eso se logra de la siguiente manera.
+El método set, nos permite guardar datos dentro del objeto Storage y este método recibe dos argumentos, el primero es una key y el segundo es un value y eso se logra de la siguiente manera.
 
 ejemplo:
 
-`
-store.set('nombre', 'storjs');
-`
+```javascript
+// Para utilizar el método set podemos hacer uso de el así
+
+// Instancia del objeto Stor
+const store = new Stor();
+
+// Método set
+store.set('name', 'Storjs');
+```
+
+## Método get()
+
+El método get, nos permite extraer los datos almacenados dentro del objeto Storage pasando una argumento, y ese argumento es una key y se logra de la siguiente manera.
+
+ejemplo:
+
+```javascript
+// Para utilizar el método get podemos hacer uso de el así
+
+// Instancia del objeto Stor
+const store = new Stor();
+
+// Método set
+store.get('name'); // De esta manera si tenemos datos almacenados los extraera
+```

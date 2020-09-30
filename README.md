@@ -9,7 +9,11 @@ Para hacer uso de la libreria, usted puede usar el siguiente CDN
 ## CDN
 
 ```javascript
+// Recomendado para producción
 <script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs/dist/stor.min.js"></script>
+
+// Obtenga la versión de storjs especifica
+<script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs@0.0.1/dist/stor.min.js"></script>
 ```
 
 ## API

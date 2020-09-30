@@ -36,12 +36,3 @@ const Stor = (function() {
     return Constructor;
 
 })();
-
-const store = new Stor();
-
-store.set('name', 'Jorge paul', options, {
-    message: 'Se guardo correctament',
-    error: 'Error al guardase los datos'
-});
-
-console.log(store.options);

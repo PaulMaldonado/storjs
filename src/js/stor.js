@@ -7,8 +7,10 @@ const Stor = (function() {
     }
 
     // Método set, este método nos permitira guardar los datos
-    Constructor.prototype.set = function(key, value) {
+    Constructor.prototype.set = function(key, value, options) {
         if(!key && !value || key === null || value === null) throw new Error('Please verify, not found a key and a value');
+
+        if(!options || options !== 'object') throw new Error;
 
         return this.storage.setItem(key, JSON.stringify(value));
     }
@@ -36,3 +38,12 @@ const Stor = (function() {
     return Constructor;
 
 })();
+
+const store = new Stor();
+
+store.set('name', 'Jorge paul', options, {
+    message: 'Se guardo correctament',
+    error: 'Error al guardase los datos'
+});
+
+console.log(store.options);

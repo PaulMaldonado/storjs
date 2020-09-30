@@ -7,8 +7,9 @@
 Para hacer uso de la libreria, usted puede usar el siguiente CDN
 
 ## CDN
+
 ```javascript
-<script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/Storjs/dist/stor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs/dist/stor.min.js"></script>
 ```
 
 ## API

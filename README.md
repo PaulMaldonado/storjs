@@ -13,7 +13,7 @@ Para hacer uso de la libreria, usted puede usar el siguiente CDN
 <script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs/dist/stor.min.js"></script>
 
 // Obtenga la versión de storjs especifica
-<script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs@0.0.1/dist/stor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs@0.0.2/dist/stor.min.js"></script>
 ```
 
 ## API
@@ -91,6 +91,16 @@ const store = new Stor();
 // Método destroy
 store.clean(); // Con esto ya tendremos vaciado nuestro objeto Storage. 
 ```
+
+## Extras
+
+Para realizar los cambios al archivo stor.min.js y se vean reflejados en tú terminal utiliza el siguiente comando:
+
+```javascript
+// Comando para realizar cambios al archivo stor.min.js
+gulp
+```
+
 
 ## Licencia
 

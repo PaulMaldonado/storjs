@@ -94,7 +94,7 @@ store.clean(); // Con esto ya tendremos vaciado nuestro objeto Storage.
 
 ## Extras
 
-Para realizar los cambios al archivo stor.min.js y se vean reflejados en tú terminal utiliza el siguiente comando:
+Para realizar los cambios al archivo stor.min.js y se vean reflejados, en tú terminal utiliza el siguiente comando:
 
 ```javascript
 // Comando para realizar cambios al archivo stor.min.js

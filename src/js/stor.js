@@ -36,4 +36,3 @@ const Stor = (function() {
     return Constructor;
 
 })();
-

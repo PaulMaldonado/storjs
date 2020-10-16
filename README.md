@@ -1,6 +1,6 @@
 # Stor js 💻
 
-## Stor.js, es una libreria que te permite interactuar con la API de localStorage.
+## Stor.js, es una libreria que te permite interactuar con la API de localStorage, su peso es de tan solo 595 Bytes.
 
 ## Instalación
 

@@ -12,10 +12,6 @@ Para hacer uso de la libreria, usted puede usar el siguiente CDN
 // Recomendado para producción
 <script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs/dist/stor.min.js"></script>
 
-// Obtenga la versión de storjs especifica
-<script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs@0.0.2/dist/stor.min.js"></script>
-```
-
 ## API
 
 Antes de comenzar a trabajar con Storjs, usted necesita hacer una nueva instancia del objeto Stor de la siguiente manera.

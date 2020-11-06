@@ -1,39 +1,36 @@
 const Stor = (function() {
     'use strict';
 
-    // Objeto Constructor
-    const Constructor = function() {
-        this.storage = localStorage;
-    }
+    // Objeto methods
+    const methods = {};
 
     // Método set, este método nos permitira guardar los datos
-    Constructor.prototype.set = function(key, value) {
-        if(!key || !value || key === null || value === null) throw new Error('Please verify, not found a key and a value');
+    methods.set = function(key, value) {
+        if(!key && !value || key && value === null) return
 
-        return this.storage.setItem(key, JSON.stringify(value));
+        return window.localStorage.setItem(key, JSON.stringify(value));
     }
 
     // Método get, este método nos permitira obtener por key los datos 
-    Constructor.prototype.get = function(key) {
-        if(!key) throw new Error('Not found key, please verify');
+    methods.get = function(key, value) {
+        if(!key || key === null) return
 
-        return JSON.parse(this.storage.getItem(key));
+        return JSON.parse(window.localStorage.getItem(key));
     }
 
     // Método destroy, este método nos permitira eliminar un dato por medio de un key
-    Constructor.prototype.destroy = function(key) {
-        if(!key) throw new Error('We could not delete the data, check if there is a key');
+    methods.delete = function(key) {
+        if(!key || key === null) return
 
-        return this.storage.removeItem(key);
+        return window.localStorage.removeItem(key);
     }
 
     // Método clean, este método nos permitira borrar toda la cache del objeto Storage
-    Constructor.prototype.clean = function() {
-        return this.storage.clear();
+    methods.clean = function() {
+        return window.localStorage.clean();
     }
 
     // Retornando el Constructor
-    return Constructor;
+    return methods;
 
 })();
-

@@ -2,7 +2,10 @@ const Stor = (function() {
     'use strict';
 
     // Objeto methods
-    const methods = {};
+    const methods = {
+        fetchDates: [],
+        addItemes: []
+    };
 
     // Método set, este método nos permitira guardar los datos
     methods.set = function(key, value) {
@@ -28,6 +31,20 @@ const Stor = (function() {
     // Método clean, este método nos permitira borrar toda la cache del objeto Storage
     methods.clean = function() {
         return window.localStorage.clean();
+    }
+
+    // Método que nos permitira crear un objeto para almacenar datos en el objeto storage.
+    methods.create = function(name, date, data) {
+        if(!name || !date || data === null) {
+            throw new Error('Necesita definir un nombre, una fecha o un dato');
+        }
+
+        return window.localStorage.setItem(name, JSON.stringify({
+            data: data,
+            date: new Date()
+        }));
+
+        methods.fetchDates.push(name);
     }
 
     // Retornando el Constructor

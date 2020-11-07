@@ -33,20 +33,6 @@ const Stor = (function() {
         return window.localStorage.clean();
     }
 
-    // Método que nos permitira crear un objeto para almacenar datos en el objeto storage.
-    methods.create = function(name, date, data) {
-        if(!name || !date || data === null) {
-            throw new Error('Necesita definir un nombre, una fecha o un dato');
-        }
-
-        return window.localStorage.setItem(name, JSON.stringify({
-            data: data,
-            date: new Date()
-        }));
-
-        methods.fetchDates.push(name);
-    }
-
     // Retornando el Constructor
     return methods;
 

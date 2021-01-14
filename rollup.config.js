@@ -4,12 +4,21 @@ import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 
 export default {
-    input: './src/js/stor.js',
-    output: {
-        file: './build/stor.min.js',
-        format: 'iife',
-        name: 'bundle'
-    },
+    input: 'src/js/stor.js',
+    output:[
+        {
+            file: 'dist/stor.js',
+            format: 'cjs'
+        },
+        {
+            file: 'dist/stor.min.js',
+            format: 'iife',
+            name: 'version',
+            plugins: [
+                terser()
+            ]
+        }
+    ],
 
     plugins: [
         babel({
@@ -17,7 +26,6 @@ export default {
         }),
 
         resolve(),
-        commonjs(),
-        terser()
+        commonjs()
     ]
 };

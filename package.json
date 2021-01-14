@@ -2,7 +2,7 @@
   "name": "storjs",
   "version": "1.1.0",
   "description": "Una libreria para localStorage",
-  "main": "./build/js/stor.min.js",
+  "main": "./dist/js/stor.min.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w"

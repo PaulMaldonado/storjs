@@ -9,7 +9,7 @@
 **Recomendado para produccón**
 
 ```html
-    <script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs/build/stor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs/dist/stor.min.js"></script>
 ```
 
 ## Documentación

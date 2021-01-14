@@ -1,7 +1,9 @@
 const Stor = (function() {
     'use strict';
 
-    const methods = {};
+    const methods = {
+        
+    };
 
     methods.setStore = function(key, value) {
         if(!key || !value || key && value === null) return
@@ -24,6 +26,7 @@ const Stor = (function() {
     methods.clearStore = function() {
         return window.localStorage.clean()
     }
+
 
     return methods;
 })();

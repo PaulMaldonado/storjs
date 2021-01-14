@@ -8,8 +8,16 @@
 
 **Recomendado para produccón**
 
+## Use Jsdelivr
+
 ```html
     <script src="https://cdn.jsdelivr.net/gh/PaulMaldonado/storjs/dist/stor.min.js"></script>
+```
+
+## También puede usar UNPKG 
+
+```html
+    <script src="https://unpkg.com/storjs/dist/stor.min.js"></script>
 ```
 
 ## Documentación

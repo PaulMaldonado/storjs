@@ -27,8 +27,3 @@ const Stor = (function() {
 
     return methods;
 })();
-
-
-const stor = Stor;
-
-stor.setStore('name', 'Jorge paul');

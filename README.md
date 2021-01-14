@@ -29,7 +29,7 @@
 *El método setStore, nos permite guardar datos dentro del objeto Storage y este método recibe dos argumentos, el primero es una key y el segundo es un value y eso se logra de la siguiente manera.*
 
 ```javascript
-const stor = new Stor();
+const stor = Stor;
 
 stor.setStore('name', 'Storjs');
 ```
@@ -38,7 +38,7 @@ stor.setStore('name', 'Storjs');
 *El método getStore, nos permite extraer los datos almacenados dentro del objeto Storage pasando una argumento, y ese argumento es una key y se logra de la siguiente manera.*
 
 ```javascript
-const stor = new Stor();
+const stor = Stor;
 
 stor.getStore('name');
 ```
@@ -47,7 +47,7 @@ stor.getStore('name');
 *El método deleteStore, nos permite eliminar un dato pasando un argumento al método, y ese argumento tiene que ser una key.*
 
 ```javascript
-const stor = new Stor();
+const stor = Stor;
 
 stor.deleteStore('name');
 ```
@@ -56,7 +56,7 @@ stor.deleteStore('name');
 *El método clearStore, nos permite vaciar todo el objeto Storage y es tan simple como solo llamarlo de la siguiente manera.*
 
 ```javascript
-const stor = new Stor();
+const stor = Stor;
 
 stor.clearStore();
 ```

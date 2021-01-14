@@ -5,20 +5,13 @@ import { terser } from 'rollup-plugin-terser';
 
 export default {
     input: 'src/js/stor.js',
-    output:[
-        {
-            file: 'dist/stor.js',
-            format: 'cjs'
-        },
-        {
-            file: 'dist/stor.min.js',
-            format: 'iife',
-            name: 'version',
-            plugins: [
-                terser()
-            ]
-        }
-    ],
+    output: {
+        file: 'dist/stor.min.js',
+        format: 'cjs',
+        plugins: [
+            terser()
+        ]
+    },
 
     plugins: [
         babel({

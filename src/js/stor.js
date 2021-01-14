@@ -1,24 +1,34 @@
-class Stor {
-    
-    getStore(key) {
-        if(!key || key === null || key !== 'string') return;
+const Stor = (function() {
+    'use strict';
 
-        return JSON.parse(window.localStorage.getItem(key));
+    const methods = {};
+
+    methods.setStore = function(key, value) {
+        if(!key || !value || key && value === null) return
+
+        return window.localStorage.setItem(key, JSON.stringify(value))
     }
 
-    setStore(key, value) {
-        if(!key || !value || key && value === null) return;
+    methods.getStore = function(key) {
+        if(!key || key === null || typeof key !== 'string') return
 
-        return window.localStorage.setItem(key, JSON.stringify(value));
+        return JSON.parse(window.localStorage.getItem(key))
     }
 
-    deleteStore(key) {
-        if(!key || key === null) return;
-
-        return window.localStorage.removeItem(key);
+    methods.deleteStore = function(key) {
+        if(!key || key === null) {
+            return window.localStorage.removeItem(key)
+        }
     }
 
-    clearStore() {
-        return window.localStorage.clean();
+    methods.clearStore = function() {
+        return window.localStorage.clean()
     }
-}
+
+    return methods;
+})();
+
+
+const stor = Stor;
+
+stor.setStore('name', 'Jorge paul');

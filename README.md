@@ -6,7 +6,7 @@
 
 ## Instalación
 
-*Para hacer uso de la libreria, usted puede usar el siguiente CDN*
+*Para hacer uso de stor.js, usted puede usar el siguiente CDN*
 
 **Recomendado para produccón**
 

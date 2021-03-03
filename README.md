@@ -2,7 +2,7 @@
 
 ## Versión 1.1.0
 
-*Stor.js, es una libreria que te permite interactuar con la API de localStorage, su peso es de tan solo 399 Bytes.*
+*Stor.js, es un cliente que te permite interactuar con la API de localStorage, su peso es de tan solo 399 Bytes.*
 
 ## Instalación
 
